@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --blanc: #fff;
+    --bleu: #2db5df;
+    --rouge: #bb1818;
+    --blanc: #190235;
+    --gris-clair: #f5f5f5;
+    --gris-fonce: #333333;
+    --Aqua: aqua;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Courier New', Courier, monospace;
+}
+
+/* les classes personnalisées(créer par l'utilisateur) */
+/* navbar*/
+.navbar {
+    background-color: aqua; /*couleur d'arriere plan*/
+    color: var(--blanc); /*couleur du texte*/
+    display: flex; /* permet d'aligner les éléments enfants sur la meme ligne*/
+    justify-content: space-between; /*pour occuper l'espace horizontale (largeur) disponible de l'ecran*/
+    align-items: center; /*Centre verticalement les éléments après display*/
+    padding: 7px; /* espace à l'interieur de la navbar*/
+}  
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-image {
+    width: 50px;
+    margin-right: 10px; /* pour espacer entre la balise image et le paragraphe*/
+
+}
+
+.menus {
+    display: flex;
+    gap: 10px; /* pour espacer les éléments du menus*/
+}
+
+.menus a {
+    text-decoration: none; /*pour enlever le style appliquer par defaut sur html*/
+    color: var(--blanc);
+    text-transform: uppercase; /*mettre le texte en majuscule*/
+    font-size: 0.8rem;
+    transition: all 0.5s ease; /*pour ajouter une transition fluide lors du survol*/
+    
+}
+
+.menus a:hover {
+    color: #fff; /*changer la couleur du texte au survol*/
+    background-color: var(--blanc); /*changer la couleur d'arriere plan au survol*/
+    padding: 5px; /*espace à l'interieur du bouton*/
+    border-radius: 20px; /*pour arrondir les coins du bouton*/
+}
+
+/*Style pour la section hero*/
+.hero {
+    display: flex; /*pour aligner les éléments enfants sur la meme ligne*/
+    justify-content: center; /*pour centrer horizontalement les éléments*/
+    width: 100%; /*pour occuper toute la largeur de l'écran*/
+    height: 90vh; /*pour occuper toute la hauteur de l'écran*/
+    align-items: center; /*pour centrer verticalement les éléments*/
+    background: linear-gradient(#00000080 ,#00000080), url(/image/hero2.avif) ; /*ajout d'un dégradé noir transparent sur l'image de fond pour améliorer la lisibilité du texte*/
+    background-repeat: no-repeat; /*pour ne pas répéter l'image de fond*/
+    background-position: center; /*pour centrer l'image de fond*/
+    background-size: cover; /*pour que l'image de fond couvre toute la section*/
+
+}
+
+/* Style pour les éléments  du bloc (div)de la section hero */ 
+.items-hero {
+   display: flex; /*pour aligner les éléments enfants sur la meme ligne*/
+   flex-direction: column; /*pour empiler les éléments verticalement*/
+   color: #fff ; /*couleur du texte*/
+   gap: 20px; /*espacement entre les éléments*/
+   text-align: center; /*pour centrer le texte*/
+}
+
+.items-hero p {
+    color: var(--Aqua); /*couleur du texte*/
+    font-size: 1.5rem;
+    
+}
+
+.items-hero h1 {
+    font-size: 2.2rem; /*taille du texte*/
+    text-transform: uppercase; /*mettre le texte en majuscule*/
+    font-weight: bold; /*pour mettre le texte en gras*/
+}
+
+.items-hero a  {
+    font-size: 1rem; /*taille du texte*/
+    text-decoration: none; /*pour enlever le style appliquer par defaut sur html*/
+    color: #000000; /*couleur du texte*/
+    background-color:aqua; /*couleur d'arriere plan*/
+    padding: 10px; /*espace à l'interieur du bouton*/
+    border-radius: 20px; /*pour arrondir les coins du bouton*/
+    width: fit-content; /*pour que la largeur du bouton s'adapte au contenu*/
+    margin: 0 auto; /*pour centrer le bouton*/
+    text-transform: uppercase; /*mettre le texte en majuscule*/
+
+}
+
+.btn:hover {
+    background-color: #fff; /*changer la couleur d'arriere plan au survol*/
+    color: var(--blanc); /*changer la couleur du texte au survol*/
+    transition: all 0.5s ease; /*pour ajouter une transition fluide lors du survol*/
+  
+}
+  
