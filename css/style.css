@@ -20,7 +20,7 @@
 /* les classes personnalisées(créer par l'utilisateur) */
 /* navbar*/
 .navbar {
-    background-color: aqua; /*couleur d'arriere plan*/
+    background-color: rgb(5, 224, 224); /*couleur d'arriere plan*/
     color: var(--blanc); /*couleur du texte*/
     display: flex; /* permet d'aligner les éléments enfants sur la meme ligne*/
     justify-content: space-between; /*pour occuper l'espace horizontale (largeur) disponible de l'ecran*/
@@ -85,7 +85,7 @@
 }
 
 .items-hero p {
-    color: var(--Aqua); /*couleur du texte*/
+    color: rgb(5, 224, 224); /*couleur du texte*/
     font-size: 1.5rem;
     
 }
@@ -100,7 +100,7 @@
     font-size: 1rem; /*taille du texte*/
     text-decoration: none; /*pour enlever le style appliquer par defaut sur html*/
     color: #000000; /*couleur du texte*/
-    background-color:aqua; /*couleur d'arriere plan*/
+    background-color:rgb(5, 224, 224); /*couleur d'arriere plan*/
     padding: 10px; /*espace à l'interieur du bouton*/
     border-radius: 20px; /*pour arrondir les coins du bouton*/
     width: fit-content; /*pour que la largeur du bouton s'adapte au contenu*/
@@ -116,3 +116,74 @@
   
 }
   
+
+/* section a propos*/
+.apropos {
+    background: #00000008; /*ajout d'un dégradé noir transparent sur l'image de fond pour améliorer la lisibilité du texte*/
+    padding: 30px; /*espace à l'interieur de la section*/
+    color: #000000; /*couleur du texte*/
+    text-align: center; /*pour centrer le texte*/
+    
+}
+
+.apropos video {
+    border-radius: 20px;
+}
+
+.apropos h2 {
+
+    font-size: 1.8rem; /*taille du texte*/
+    margin-bottom: 20px; /*espace à l'interieur de la section*/
+
+}
+
+.services {
+    background: #00000008; /*ajout d'un dégradé noir transparent sur l'image de fond pour améliorer la lisibilité du texte*/
+    padding: 30px; /*espace à l'interieur de la section*/
+    color: #000000; /*couleur du texte*/
+    text-align: center;
+  
+}
+
+.services h2 {
+    font-size: 1.8rem; /*taille du texte*/
+    margin-bottom: 10px; /*espace à l'interieur de la section*/
+    text-align: center; /*pour centrer le texte*/
+   
+}
+
+ 
+.services-text {
+    max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.1em;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background: rgb(5, 224, 224); /*ajout d'un dégradé noir transparent sur l'image de fond pour améliorer la lisibilité du texte*/
+    padding: 10px; /*espace à l'interieur de la section*/
+    color: #000000; /*couleur du texte*/
+    text-align: center; /*pour centrer le texte*/
+}
+
+.contact {
+    text-align: left;
+}
+
+.contact a {
+    margin-left: 8px;
+}
+
+.localisation {
+    text-align: right;
+}
+
+.localisation p {
+    margin-right: 25px;
+}

@@ -5,7 +5,7 @@
   <!-- Les balises indispensables-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Mon portfolio</title>
   <link rel="shortcut icon" href="image/logo.webp" type="image/*">
 
   <!-- les balise head facultatives mais importantes pour le seo (réferencement naturel)-->
@@ -22,6 +22,8 @@
 
   <!--Ajout de la feuille de style-->
   <link rel="stylesheet" href="css/style.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
@@ -33,7 +35,7 @@
       <img class="logo-image" src="image/logo.webp" alt="logo">
 
       <!-- pour creer un paragraphe-->
-      <p> Exo html</p>
+      <p> Kouakou Mondésire</p>
 
     </div>
 
@@ -42,7 +44,7 @@
       <a href="#" class="menu-item">Acceuil</a>
       <a href="#apropos" class="menu-item">A propos</a>
       <a href="#services" class="btn-1">Nos services</a>
-      <a href="#contact" class="menu-item">Contactez nous</a>
+      <a href="#contact" class="menu-item">Contacts</a>
     </div>
   </nav>
 
@@ -62,54 +64,63 @@
     </section>
 
     <!-- section a propos-->
-    <section id="apropos"> <!--Pour que le navigateur soit sur la section a propos quand on clic sur a propos dans la barre de navigation-->
-      
+    <section id="apropos" class="apropos"> 
       <div>
 
         <h2>A propos</h2>
       
         <!--ajout de video-->
 
-        <!-- premiere methode: video locale-->
+        <!--video locale-->
         <video src="video/video.mp4" controls width="200px"></video>
 
-        <!--methode 2: via youtube-->
-
-       <!-- <iframe width="300px" height="150" src="https://www.youtube.com/embed/UU1fBp5zAqo?list=RDUU1fBp5zAqo"
-          title="[FREE] Rsko x Bouss Type Beat - &quot;Moncler&quot; (Prod. DarkPlug)" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
       </div>
       
     </section>
 
     <!--section nos services-->
-    <section id="services">
-      <div>
+    <section  class="services" id="services">
+
+
+
+      <div class="services-text">
         <h2>  Nos services</h2>
-      
-         <ol>
-               <li> <strong> Sites web personnalisé:</strong> Pour valoriser votre image</li>
-               <li> <strong>Design responsive:</strong> Une expérience fluide sur tous les écrans</li>
-               <li> <strong>Intégration multimédia:</strong> Vos vidéos et musiques au coeur du site</li>
-         </ol> 
+      <p>Nous proposons des solutions digitales complètes adaptées à vos besoins. De la création de sites web modernes et responsives au design d’interfaces claires et intuitives, nous mettons l’accent sur la qualité, la performance et l’expérience utilisateur. Nous assurons l’intégration <strong>HTML, CSS et Bootstrap </strong>avec une structure propre et optimisée, tout en veillant à la compatibilité sur tous les supports (ordinateur, tablette et mobile). Nous offrons également des services d’optimisation, de maintenance et de mise à jour afin de garantir un site fiable, rapide et toujours à jour.</p>
       </div>
     </section>
 
-    <!--section contact-->
-    <section id="contact">
-      <div>
-        <h2>Contact</h2>
-         <p><a href="https://wa.me/2250172649110">Contactez moi sur whatsapp</a></p>
-      </div>     
-
-    </section>
   </main>
 
   <!--footer (pied de page)-->
-  <footer id="Accueil">
-    <p>&copy; kayim / Mon portfolio</p> 
+  <footer class="footer">
 
+    <!--section contact-->
+    <section class="contact" id="contact">
+   
+      <div>
+        <h2>Contacts</h2>
+         <a href="https://wa.me/2250172649110" target="_blank">
+    <i class="fab fa-whatsapp" style="font-size:30px; color:#ffffff;"></i>
+    </a>
+
+         <a href="https://www.instagram.com/kayimtruixofficiel?igsh=MXNxbTJwemNrNDVxbw==" target="_blank">
+  <i class="fab fa-instagram" style="font-size:30px; color:#ffffff;"></i>
+         </a>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="localisation">
+        <h2> Localisation</h2>
+          <p>📍Abidjan</p>
+        
+      </div>
+    </section>
+
+
+    <p>&copy;Mon portfolio. Conçu par Kouakou Mondésire</p> 
+  </footer>
 </body>
 
 </html>
